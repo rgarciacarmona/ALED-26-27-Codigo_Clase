@@ -5,4 +5,5 @@ bin/
 .DS_Store
 
 # Agent instructions (not for repo)
+CLAUDE.md
 AGENTS.md
