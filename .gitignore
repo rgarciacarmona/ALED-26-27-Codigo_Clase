@@ -1,0 +1,8 @@
+# Eclipse build output
+bin/
+
+# OS artifacts
+.DS_Store
+
+# Agent instructions (not for repo)
+AGENTS.md
