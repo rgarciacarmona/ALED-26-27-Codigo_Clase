@@ -1,6 +1,6 @@
 package aled2627.clase0911;
 
-public class Abuelo {
+public class Abuelo  implements Cansable {
 	// Atributos
 	private String nombre;
 
@@ -33,4 +33,18 @@ public class Abuelo {
 		this.nombre = nombre;
 	}
 
+	@Override
+	public String toString() {
+		return "Abuelo [" + getNombre() + "]";
+	}
+
+	@Override
+	public void cansar() {
+		System.out.println("No puedes cansarme, viví la posguerra");
+	}
+
+	@Override
+	public void descansar() {
+		System.out.println("No puedo descansar, la vida es trabajar");
+	}
 }

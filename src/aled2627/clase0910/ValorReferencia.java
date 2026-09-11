@@ -29,12 +29,12 @@ public class ValorReferencia {
 	
 	public static void main(String[] args) {
 		// "x" solo para este método
-//		int x = 0;
-//		System.out.println(x);
-//		aumenta(x);
-//		System.out.println(x);
-//		x = aumentaBien(x);
-//		System.out.println(x);
+		int x = 0;
+		System.out.println(x);
+		aumenta(x);
+		System.out.println(x);
+		x = aumentaBien(x);
+		System.out.println(x);
 		int[] arr = new int[4];
 		arr[0] = 2; arr[1] = 4; arr[2] = 8; arr[3] = 16;
 		aumentaArr(arr);
