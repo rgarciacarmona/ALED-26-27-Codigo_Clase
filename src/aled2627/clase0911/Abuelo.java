@@ -1,11 +1,10 @@
 package aled2627.clase0911;
 
-public class Abuelo  implements Cansable {
+public class Abuelo implements Cansable {
 	// Atributos
 	private String nombre;
 
 	// Métodos
-
 	// Constructor (se llama cuando haces new)
 	// No devuelve nada y se llama como la clase
 	public Abuelo(String nombre) {

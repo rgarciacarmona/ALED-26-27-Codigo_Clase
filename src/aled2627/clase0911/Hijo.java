@@ -29,7 +29,5 @@ public class Hijo extends Padre implements Cansable {
 	@Override
 	public void descansar() {
 		System.out.println("Soy un Alpha, ya estaba descansando antes de que me lo dijeras");
-	}
-	
-	
+	}	
 }
