@@ -36,7 +36,7 @@ public class MazeSolver {
 
 	// Método auxiliar, que implementa la recursividad
 	// Devuelve un boolean, que indica si el camino conduce a la salida
-	private boolean walk(Coordinate current) {
+	private boolean walk(Coordinate current) { // O(1)
 		// 2. Caso base
 		// ¿Estoy dentro del laberinto?
 		if (current.getX() < 0 || current.getX() >= maze[0].length()
@@ -58,8 +58,8 @@ public class MazeSolver {
 		// 1. Código general
 		// Si he llegado a este punto, la coordenada es "procesable"
 		// Añado la coordenada actual al camino y a la lista de visitadas
-		path.add(current);
-		visited.add(current);
+		path.add(current); // O(1)
+		visited.add(current); // O(1)
 
 		// 2. Caso base
 		// ¿He llegado a la salida?
@@ -81,7 +81,7 @@ public class MazeSolver {
 		toVisit[2] = down;
 		toVisit[3] = left;
 		// 3.2 Las visito
-		for (Coordinate coordinate : toVisit) {
+		for (Coordinate coordinate : toVisit) { // O(4) -> O(1)
 			// Si alguna conduce al final, ¡devuelvo true!
 			if (this.walk(coordinate)) {
 				return true;
@@ -90,7 +90,8 @@ public class MazeSolver {
 		// 3.3 Post: Si he llegado hasta aquí, es que ninguno de los caminos que
 		// parten de esta coordenada conduce a la salida.
 		// Elimino la coordenada actual del camino y devuelvo false
-		path.remove(current); // O(n); debería usarse path.remove(path.size() - 1)
+		// path.remove(current); // O(n); debería usarse path.remove(path.size() - 1)
+		path.remove(path.size() - 1); // O(1)
 		return false;
 
 	}

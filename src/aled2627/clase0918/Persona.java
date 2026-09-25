@@ -44,7 +44,7 @@ public class Persona {
 		else  {
 			for (Persona hijo : this.hijos) {
 				String descendientes = hijo.descendientes();
-				nombres += " [" + descendientes + " ]";
+				nombres += " [" + descendientes + "]";
 			}
 		}
 		// Código común
